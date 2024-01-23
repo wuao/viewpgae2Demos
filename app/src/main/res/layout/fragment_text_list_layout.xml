@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#8D9098"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:focusableInTouchMode="true"
+        app:srlEnablePureScrollMode="true">
+
+
+        <com.demo.viewpgae2demos.ui.view.RecyclerViewAtViewPager2
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            tools:listitem="@layout/list_text_item_view" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>
